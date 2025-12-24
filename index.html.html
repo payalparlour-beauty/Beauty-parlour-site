@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payal Beauty Parlour</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff5f7;
+      color: #333;
+    }
+    header {
+      background: #e75480;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #ffb6c1;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    .services, .booking, .contact {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 700px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    h2 {
+      color: #e75480;
+      text-align: center;
+    }
+    button {
+      background: #e75480;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background: #e75480;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Payal Beauty Parlour</h1>
+  <p><i>Your beauty, our duty ✨</i></p>
+  <p><b>Home Services AVAILABLE</b></p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#booking">Book Appointment</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome!</h2>
+  <p>Professional beauty & spa services at your doorstep 💖</p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services & Pricing</h2>
+
+  <ul>
+    <li><b>Pedicure🦶</b> – ₹800</li>
+    <li><b>Manicure💅</b> – ₹800</li>
+
+    <li><b>Facial💆</b> – ₹500 to ₹2000</li>
+
+    <li><b>Waxing</b>
+      <ul>
+        <li>Chocolate, White, Dark, Rice, Normal</li>
+        <li>₹200 to ₹800</li>
+      </ul>
+    </li>
+
+    <li><b>Bleach🌿</b>
+      <ul>
+        <li>Gold, Herbal, Diamond, D-Tan</li>
+        <li>₹200 to ₹350</li>
+      </ul>
+    </li>
+
+    <li><b>Clean Up✨</b>
+      <ul>
+        <li>D-Tan, Gold, Herbal, Fruits</li>
+        <li>₹300 to ₹450</li>
+      </ul>
+    </li>
+
+    <li><b>Head Massage (Hot oil massage)</b> – ₹200</li>
+    <li><b>Body Spa (Oil Massage)</b> – ₹1200</li>
+    <li><b>Hair Spa💆‍♀️</b> – ₹1000</li>
+
+    <li><b>Hair Cut💇</b>
+      <ul>
+        <li>Straight, Layer, Step, Feather, Advance, Wolf</li>
+        <li>₹200 to ₹250</li>
+      </ul>
+    </li>
+
+    <li><b>Makeup👰</b>
+      <ul>
+        <li>Simple, Party Wear, Wedding, Baby Shower, Reception</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section id="booking" class="booking">
+  <h2>Book Your Appointment</h2>
+  <form id="bookingForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Contact Number" required>
+
+    <select required>
+      <option value="">Select Service</option>
+      <option>Pedicure</option>
+      <option>Manicure</option>
+      <option>Facial</option>
+      <option>Waxing</option>
+      <option>Bleach</option>
+      <option>Clean Up</option>
+      <option>Head Massage</option>
+      <option>Body Spa</option>
+      <option>Hair Spa</option>
+      <option>Hair Cut</option>
+      <option>Makeup</option>
+    </select>
+
+    <input type="date" required>
+    <input type="time" required>
+    <button type="submit">Confirm Booking</button>
+  </form>
+
+  <p id="confirmationMsg" style="color:green; font-weight:bold; display:none;">
+    ✅ Appointment Confirmed! See you soon.
+  </p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>📍 New Ris,Shri Hari park Phase-2, Opposite to Apoorva hotel,Rasayani</p>
+  <p>📞 +91 8605797582</p>
+  <p>📧 mypayalparlour@gmail.com</p>
+</section>
+
+<footer>
+  <p>©Payal Beauty Parlour</p>
+</footer>
+
+<script>
+  document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('confirmationMsg').style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
+
